@@ -17,24 +17,27 @@ vimgolf도 마찬가지이다. start file로 시작하여 end file을 완성하�
 * 9v0060da5177000000000209
 * 6013804df3308e0009368f1c
 
-## 5f0f5fbe280fbf000c233304 (Add quotes to ansible playbook)
+## 5f0f5fbe280fbf000c233304
 <img src="https://user-images.githubusercontent.com/77472995/144710985-f91925da-87f0-4bf0-b976-b78ca78f1fdf.png" width=350px height=350px> 
 $ vimgolf put 5f0f5fbe280fbf000c233304
 
-### solution
+### solution (my score:9 / best score:8)
 **GWi"\<End\>"\<Esc\>ZZ**\
-+ G:맨 마지막 행으로 이동\
-+ W:단어 단위 이동 (현재 커서는 {)\
-+ i:입력모드 전환(현재 커서의 앞에서 입력)\
-+ ZZ:저장하고 종료\
++ G : 맨 마지막 행으로 이동
++ W : 단어 단위 이동 (현재 커서는 {)
++ i : 입력모드 전환(현재 커서의 앞에서 입력)
++ ZZ : 저장하고 종료
 
 ## 603ba26a01b4d00009c10a49 (simple replacements)
 <img src="https://user-images.githubusercontent.com/77472995/144711580-009fa354-e18c-424e-a423-44aba902c35a.png" width=350px height=350px>
 $ vimgolf put 603ba26a01b4d00009c10a49
 
-### solution
+### solution (my score:25 / best score:19)
 **wcwvim\<Esc\>:%s/emacs/vim/g\<CR\>ZZ**
-+ G:맨 마지막 행으로 이동\
-+ W:단어 단위 이동 (현재 커서는 {)\
-+ i:입력모드 전환(현재 커서의 앞에서 입력)\
-+ ZZ:저장하고 종료\
++ w : 단어단위 이동 (현재 커서는 sublime의 s에 위치)
++ cw : 단어대체(sublime이라는 단어가 삭제되면서 입력모드로 변환)
++ vim입력
++ :%s/emacs/vim/g : emacs라는 단어를 vim으로 치환
++ ZZ : 저장하고 종료
+
+

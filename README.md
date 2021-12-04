@@ -17,27 +17,66 @@ vimgolf도 마찬가지이다. start file로 시작하여 end file을 완성하�
 * 9v0060da5177000000000209
 * 6013804df3308e0009368f1c
 
-## 5f0f5fbe280fbf000c233304
+## 1. 5f0f5fbe280fbf000c233304
 <img src="https://user-images.githubusercontent.com/77472995/144710985-f91925da-87f0-4bf0-b976-b78ca78f1fdf.png" width=350px height=350px> 
 $ vimgolf put 5f0f5fbe280fbf000c233304
 
 ### solution (my score:9 / best score:8)
-**GWi"\<End\>"\<Esc\>ZZ**\
+`GWi"\<End\>"\<Esc\>ZZ`
 + G : 맨 마지막 행으로 이동
 + W : 단어 단위 이동 (현재 커서는 {)
 + i : 입력모드 전환(현재 커서의 앞에서 입력)
 + ZZ : 저장하고 종료
 
-## 603ba26a01b4d00009c10a49 (simple replacements)
+## 2. 603ba26a01b4d00009c10a49 (simple replacements)
 <img src="https://user-images.githubusercontent.com/77472995/144711580-009fa354-e18c-424e-a423-44aba902c35a.png" width=350px height=350px>
 $ vimgolf put 603ba26a01b4d00009c10a49
 
 ### solution (my score:25 / best score:19)
-**wcwvim\<Esc\>:%s/emacs/vim/g\<CR\>ZZ**
+`wcwvim\<Esc\>:%s/emacs/vim/g\<CR\>ZZ`
 + w : 단어단위 이동 (현재 커서는 sublime의 s에 위치)
 + cw : 단어대체(sublime이라는 단어가 삭제되면서 입력모드로 변환)
 + vim입력
 + :%s/emacs/vim/g : emacs라는 단어를 vim으로 치환
 + ZZ : 저장하고 종료
 
+## 3. 5f1063aa8361810006e73210 (Satisfy the go linter)
+<img src="https://user-images.githubusercontent.com/77472995/144712342-4a1701c7-67b2-4e04-94b0-cc60efa6826f.png" width=350px height=350px>
+$ vimgolf put 5f1063aa8361810006e73210
 
+### solution (my score:33 / best score:20)
+`4GO// Version TODO\<Esc\>Y\<Down\>pwcwDebug\<Esc\>ZZ`
++ 4G : 4번째 행으로 이동
++ O : 현재 커서위치의 행을 한칸 내리고 삽입모드 (// Version TODO 입력)
++ Y : 현재 행을 복사
++ p : 현재 커서 아래 행에 붙여넣기
++ w : 단어단위 이동(현재 커서는 Version의 V)
++ cw : 단어대체(Version이라는 단어가 사라지고 입력모드로 변경 Version을 Debug로 변경)
++ ZZ : 저장하고 종료
+
+## 4. 9v0060da5177000000000209 (Plotting some variables in python)
+<img src="https://user-images.githubusercontent.com/77472995/144716004-3d4595f3-5089-49d9-b8f9-811d1988fa6e.png" width=450px height=350px>
+$ vimgolf put 9v0060da5177000000000209
+
+### solution (my score:68 / best score:34)
+`3Gf1r2f1r2fkrbf1r2<Down>r3FkrrF1r3F1r3<Down>r4f1r4fkrgf1r4qqFyiabs(<Right><Right>)<Esc><Up>q3@qZZ`
++ 3G : 3행으로 이동
++ f1 : 1을 찾는다.
++ r2 : 찾은 1을 2로 변경한다.
++ ...
++ fk : 'k'를 찾는다.
++ rb : 찾은 'k'를 'b'로 변경한다.
++ Fk : 뒤쪽으로 'k'를 찾는다.
++ rr : 찾은 'k'를 'r'로 변경한다.
++ ...
++ qq : 매크로 시작(매크로를 끝낼 때까지 타이핑하는 키를 모두 녹화한다.)
++ Fy : 'y'를 뒤로 찾는다.
++ i : 입력모드로 변경 (abs(~)를 입력한다)
++ q : 매크로 녹화 중지
++ 3@q : 매크로를 3번 실행한다.
++ ZZ : 저장하고 종료
+
+## 5. 6013804df3308e0009368f1c (Python dataclasses)
+
+$ vimgolf put 6013804df3308e0009368f1c
+`5Gyw5<Down>f"pa,name,age,score<Esc>ZZ `

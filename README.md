@@ -77,6 +77,16 @@ $ vimgolf put 9v0060da5177000000000209
 + ZZ : 저장하고 종료
 
 ## 5. 6013804df3308e0009368f1c (Python dataclasses)
-
+<img src="https://user-images.githubusercontent.com/77472995/144716279-3c488fcd-cf1d-431a-9384-09ce5c6f6093.png" width=450px height=350px>
 $ vimgolf put 6013804df3308e0009368f1c
-`5Gyw5<Down>f"pa,name,age,score<Esc>ZZ `
+
+### solution (my score:28 / best score:19)
+`5Gyw5<Down>f"pa,name,age,score<Esc>ZZ`
++ 5G : 5행으로 이동
++ yw : 커서 위치에서 오른쪽 한 단어 복사(student_id)
++ 5↓ : 5칸 아래로 이동(10행으로)
++ f" : "를 찾아서 이동
++ p : 복사한 단어(student_id) 붙여넣기
++ a : 입력모드로 변경(커서 오른쪽으로 입력된다.)
++ ,name,age,score 입력
++ ZZ : 저장하고 종료

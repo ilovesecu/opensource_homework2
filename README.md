@@ -16,3 +16,9 @@ vimgolf도 마찬가지이다. start file로 시작하여 end file을 완성하�
 * 5f1063aa8361810006e73210
 * 9v0060da5177000000000209
 * 6013804df3308e0009368f1c
+
+## 5f0f5fbe280fbf000c233304 (Add quotes to ansible playbook)
+<img src="https://user-images.githubusercontent.com/77472995/144710985-f91925da-87f0-4bf0-b976-b78ca78f1fdf.png" width=350px height=350px> 
+
+### solution
+**GWi"\<End\>"\<Esc\>ZZ**

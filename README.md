@@ -22,6 +22,8 @@ vimgolf도 마찬가지이다. start file로 시작하여 end file을 완성하�
 $ vimgolf put 5f0f5fbe280fbf000c233304
 
 ### solution (my score:9 / best score:8)
+<img src="https://user-images.githubusercontent.com/77472995/144716494-3a74f62a-3f7d-4853-ad5c-22ca848989a6.gif" width=850px height=500px>
+
 `GWi"\<End\>"\<Esc\>ZZ`
 + G : 맨 마지막 행으로 이동
 + W : 단어 단위 이동 (현재 커서는 {)
@@ -33,6 +35,8 @@ $ vimgolf put 5f0f5fbe280fbf000c233304
 $ vimgolf put 603ba26a01b4d00009c10a49
 
 ### solution (my score:25 / best score:19)
+<img src="https://user-images.githubusercontent.com/77472995/144716648-2808c5d9-fee7-428e-b686-7cd759d43ed1.gif" width=850px height=500px>
+
 `wcwvim\<Esc\>:%s/emacs/vim/g\<CR\>ZZ`
 + w : 단어단위 이동 (현재 커서는 sublime의 s에 위치)
 + cw : 단어대체(sublime이라는 단어가 삭제되면서 입력모드로 변환)
@@ -45,6 +49,8 @@ $ vimgolf put 603ba26a01b4d00009c10a49
 $ vimgolf put 5f1063aa8361810006e73210
 
 ### solution (my score:33 / best score:20)
+<img src="https://user-images.githubusercontent.com/77472995/144716664-886ddb19-df2b-4d84-8954-c5bad3176cfc.gif" width=850px height=500px>
+
 `4GO// Version TODO\<Esc\>Y\<Down\>pwcwDebug\<Esc\>ZZ`
 + 4G : 4번째 행으로 이동
 + O : 현재 커서위치의 행을 한칸 내리고 삽입모드 (// Version TODO 입력)
@@ -81,6 +87,8 @@ $ vimgolf put 9v0060da5177000000000209
 $ vimgolf put 6013804df3308e0009368f1c
 
 ### solution (my score:28 / best score:19)
+
+
 `5Gyw5<Down>f"pa,name,age,score<Esc>ZZ`
 + 5G : 5행으로 이동
 + yw : 커서 위치에서 오른쪽 한 단어 복사(student_id)

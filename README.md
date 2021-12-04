@@ -87,7 +87,7 @@ $ vimgolf put 9v0060da5177000000000209
 $ vimgolf put 6013804df3308e0009368f1c
 
 ### solution (my score:28 / best score:19)
-
+<img src="https://user-images.githubusercontent.com/77472995/144716727-0072fa48-eded-41af-8a44-8ce2bb057d70.gif" width=850px height=500px>
 
 `5Gyw5<Down>f"pa,name,age,score<Esc>ZZ`
 + 5G : 5행으로 이동

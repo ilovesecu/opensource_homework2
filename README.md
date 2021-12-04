@@ -65,6 +65,8 @@ $ vimgolf put 5f1063aa8361810006e73210
 $ vimgolf put 9v0060da5177000000000209
 
 ### solution (my score:68 / best score:34)
+<img src="https://user-images.githubusercontent.com/77472995/144716768-d4ca53d1-cd3a-492a-9dc4-66f19f1ecee3.gif" width=850px height=500px>
+
 `3Gf1r2f1r2fkrbf1r2<Down>r3FkrrF1r3F1r3<Down>r4f1r4fkrgf1r4qqFyiabs(<Right><Right>)<Esc><Up>q3@qZZ`
 + 3G : 3행으로 이동
 + f1 : 1을 찾는다.

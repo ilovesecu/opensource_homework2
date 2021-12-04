@@ -19,6 +19,22 @@ vimgolf도 마찬가지이다. start file로 시작하여 end file을 완성하�
 
 ## 5f0f5fbe280fbf000c233304 (Add quotes to ansible playbook)
 <img src="https://user-images.githubusercontent.com/77472995/144710985-f91925da-87f0-4bf0-b976-b78ca78f1fdf.png" width=350px height=350px> 
+$ vimgolf put 5f0f5fbe280fbf000c233304
 
 ### solution
-**GWi"\<End\>"\<Esc\>ZZ**
+**GWi"\<End\>"\<Esc\>ZZ**\
++ G:맨 마지막 행으로 이동\
++ W:단어 단위 이동 (현재 커서는 {)\
++ i:입력모드 전환(현재 커서의 앞에서 입력)\
++ ZZ:저장하고 종료\
+
+## 603ba26a01b4d00009c10a49 (simple replacements)
+<img src="https://user-images.githubusercontent.com/77472995/144711580-009fa354-e18c-424e-a423-44aba902c35a.png" width=350px height=350px>
+$ vimgolf put 603ba26a01b4d00009c10a49
+
+### solution
+**wcwvim\<Esc\>:%s/emacs/vim/g\<CR\>ZZ**
++ G:맨 마지막 행으로 이동\
++ W:단어 단위 이동 (현재 커서는 {)\
++ i:입력모드 전환(현재 커서의 앞에서 입력)\
++ ZZ:저장하고 종료\
